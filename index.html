@@ -10,6 +10,84 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <style>
+      @font-face {
+        font-family: "Calibri";
+        src: url("fonts/calibri.ttf") format("ttf");
+      }
+      .s_container_fluid {
+        height: 700px;
+      }
+      .s-row > div:first-child {
+        background-color: #fff;
+      }
+      .s-row > div:last-child {
+        background-color: #442460;
+      }
+      img {
+        width: 100px;
+      }
+      .s-row input[type="email"]:focus {
+        box-shadow: none !important;
+      }
+      .s-row input[type="password"]:focus {
+        box-shadow: none !important;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container-fluid s_container_fluid">
+      <div class="row s-row h-100">
+        <div class="col-7 s-f-col p-3">
+          <a href="" class="">
+            <img src="img/logo.png" alt="" />
+          </a>
+          <div class="s-welcome w-50 offset-3 text-center">
+            <h1>Welcome BacK!</h1>
+            <p>Please login to your ideal insights accounts</p>
+            <form class="text-start">
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control border-0 border-bottom rounded-0"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="password"
+                  class="form-control border-0 border-bottom rounded-0"
+                  id="exampleInputPassword1"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      id="exampleCheck1"
+                    />
+                    <label class="form-check-label" for="exampleCheck1"
+                      >Remember Me</label
+                    >
+                  </div>
+                  <div class="col text-end">
+                    <a href="" class="">Forget Password?</a>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-warning w-100 rounded-1">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-5 s-t-col p-0">B</div>
+      </div>
+    </div>
+  </body>
 </html>
